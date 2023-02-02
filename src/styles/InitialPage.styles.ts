@@ -100,7 +100,7 @@ export const ParagraphDev = styled.p`
   line-height: 36px;
 
   @media (max-width: 1024px) {
-    margin-top: 4rem;
+    margin-top: 8rem;
     margin-right: 2.5rem;
     font-size: 1.2rem;
     line-height: 30px;
