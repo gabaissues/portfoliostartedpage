@@ -595,7 +595,7 @@ export default function Home() {
               interfaces intuitivas, acessiveis e bonitos. Busco solucionar seus problemas fazendo interfaces de sites/apps que se comportam bem a qualquer tipo de público 
             </G.ParagraphUI>
 
-            <G.Link href="#">Ir para o portfólio de UI/UX Designer</G.Link>
+            <G.Link href="https://ui.gabaissues.com">Ir para o portfólio de UI/UX Designer</G.Link>
           </G.UIContent>
         </G.UI>
 
@@ -632,7 +632,7 @@ export default function Home() {
               aplicativos, webscrapings, apis e bots!
             </G.ParagraphDev>
 
-            <G.Link href="https://dev.gabrielj.dev">Ir para o portfólio de Desenvolvedor</G.Link>
+            <G.Link href="https://dev.gabaissues.com">Ir para o portfólio de Desenvolvedor</G.Link>
           </G.DevContent>
         </G.Dev>
       </G.Main>
