@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Gaba - Início</title>
       </Head>
 
       <G.Main>
