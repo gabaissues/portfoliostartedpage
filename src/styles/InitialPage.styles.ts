@@ -209,13 +209,7 @@ export const Image = styled.img`
   text-align: center;
 
   @media (max-width: 1024px) {
-    top: auto;
-    left: 0;
-    right: 0;
-    bottom: -75px;
-
-    width: 150px;
-    height: 150px;
+    display: none;
   }
 `;
 
@@ -234,6 +228,10 @@ export const TextFixed = styled.div<{
 
   font-weight: 600;
   font-size: 1.5rem;
+
+  @media(max-width: 800px) {
+    display: none;
+  }
 `;
 export const Text = styled.h1<{
   fontSize?: string;
