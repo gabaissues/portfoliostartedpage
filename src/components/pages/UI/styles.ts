@@ -32,70 +32,44 @@ export const rotateSvg = keyframes`
 
 export const UI = styled.div`
   display: flex;
+  flex: 2;
   background-color: #fafafa;
-
-  width: 50%;
-
-  @media (max-width: 1024px) {
-    flex: 1;
-    padding: 4rem 2.5rem 0rem 0rem;
-  }
+  color: #2d2d2d;
+  height: 100vh;
 `;
 
 export const Content = styled.div`
-  flex: 1;
-  width: 100%;
-  height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
-  margin-left: 10rem;
-  padding-right: 2.5rem;
 
+  padding-top: 20rem;
+  padding-left: 5rem;
+  padding-right: 10rem;
   svg {
-    margin-left: auto;
-    margin-top: -0.8rem;
-    z-index: 2;
-    animation: ${rotateSvg} 5s infinite;
+    position: absolute;
+    animation: ${rotateSvg} 5s Infinite;
   }
 
-  @media (max-width: 800px) {
-    margin-left: 2.5rem;
+  @media(max-width: 1280px) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     padding-bottom: 2.5rem;
-    height: auto;
+  }
+
+  @media(max-width: 800px) {
+
+    padding: 4rem 2.5rem;
+
   }
 `;
 
 export const Paragraph = styled.p`
-  width: 40rem;
-  margin-top: 1.5rem;
+  text-align: left;
   font-size: 1.5rem;
-  font-weight: 400;
-  color: #464646;
-  line-height: 36px;
-
-  @media (max-width: 1660px) {
-    width: 30rem;
-  }
-
-  @media (max-width: 1440px) {
-    width: 23rem;
-  }
-
-  @media (max-width: 1280px) {
-    width: 18rem;
-  }
-
-  @media (max-width: 1024px) {
-    width: 100%;
-  }
-
-  @media (max-width: 800px) {
-    margin-top: 4rem;
-    width: 100%;
-  }
+  margin-top: 2rem;
+  line-height: 2.25rem;
 `;
-//Global
 
 export const Link = styled.a`
   display: flex;
@@ -115,7 +89,7 @@ export const Link = styled.a`
   cursor: pointer;
 
   @media (max-width: 1024px) {
-    width: 100%;
+    width: 90%;
     text-align: center;
   }
 `;

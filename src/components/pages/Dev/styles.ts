@@ -32,63 +32,57 @@ export const rotateSvg = keyframes`
 
 export const Dev = styled.div`
   display: flex;
+  flex: 2;
   background-color: #2d2d2d;
   color: #fafafa;
-
-  width: 50%;
-
-  @media (max-width: 1024px) {
-    padding: 4rem 2.5rem 0rem 0rem;
-    width: 100%;
-  }
+  height: 100vh;
 `;
 export const Content = styled.div`
-  width: 100%;
-  height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
-  margin-left: 15rem;
-  padding-right: 2.5rem;
 
-  svg {
-    margin-left: auto;
-    margin-top: -0.8rem;
-    z-index: 2;
-    animation: ${rotateSvg} 5s infinite;
-  }
+  padding-top: 20rem;
+  padding-left: 10rem;
+  padding-right: 5rem;
 
-  @media (max-width: 1280px) {
-    margin-left: 12.5rem;
-  }
-
-  @media (max-width: 800px) {
-    margin-left: 2.5rem;
-    height: auto;
-    
-    h1 {
-      line-height: 2.5rem;
-    }
-  }
-`
-
-export const Paragraph = styled.p`
-  margin-top: 1.5rem;
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: #eaeaea;
-  line-height: 36px;
-  width: 100%;
-
-  @media (max-width: 1440px) {
-    margin-top: 5rem;
+  h1 {
     text-align: right;
   }
 
-  @media (max-width: 1024px) {
-    width: 100%;
-    text-align: left;
+  svg {
+    position: absolute;
+    animation: ${rotateSvg} 5s Infinite;
   }
+
+  @media(max-width: 1280px) {
+    padding-left: 5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  @media(max-width: 800px) {
+
+    padding-top: 4rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+
+    h1 {
+      text-align: left;
+    }
+
+    p {
+      text-align: left;
+    }
+
+  }
+`;
+
+export const Paragraph = styled.p`
+  text-align: right;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  line-height: 2.25rem;
 `;
 
 export const Link = styled.a`
@@ -108,12 +102,12 @@ export const Link = styled.a`
   width: 22.75rem;
   cursor: pointer;
   margin-bottom: 5rem;
+  margin-left: auto;
 
-  @media(max-width: 1024px) {
-
-    width: 100%;
+  @media (max-width: 1024px) {
+    width: 90%;
     text-align: center;
-
+    margin-left: 0;
   }
 `;
 
