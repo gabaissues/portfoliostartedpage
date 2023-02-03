@@ -30,28 +30,6 @@ export const rotateSvg = keyframes`
   }
 `;
 
-export const Main = styled.main`
-  display: flex;
-  height: 100vh;
-
-  flex: 1;
-
-  @media (max-width: 1024px) {
-    flex-wrap: wrap;
-  }
-`;
-
-export const UI = styled.div`
-  display: flex;
-  background-color: #fafafa;
-
-  width: 50%;
-
-  @media (max-width: 1024px) {
-    width: 100%;
-  }
-`;
-
 export const Dev = styled.div`
   display: flex;
   background-color: #2d2d2d;
@@ -60,10 +38,11 @@ export const Dev = styled.div`
   width: 50%;
 
   @media (max-width: 1024px) {
+    padding: 4rem 2.5rem 0rem 0rem;
     width: 100%;
   }
 `;
-export const DevContent = styled.div`
+export const Content = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
@@ -79,53 +58,22 @@ export const DevContent = styled.div`
     animation: ${rotateSvg} 5s infinite;
   }
 
-
   @media (max-width: 1280px) {
     margin-left: 12.5rem;
   }
 
   @media (max-width: 800px) {
     margin-left: 2.5rem;
+    height: auto;
+    
+    h1 {
+      line-height: 2.5rem;
+    }
   }
-`;
-export const TitleContentDev = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 37rem;
+`
 
-  h1 {
-    position: absolute;
-    z-index: 1;
-    height: 4rem;
-    width: auto;
-  }
-
-  svg {
-    margin-left: auto;
-    margin-top: -0.8rem;
-    z-index: 2;
-    animation: ${rotateSvg} 5s infinite;
-  }
-
-  @media (max-width: 1440px) {
-    width: 100%;
-  }
-
-  @media (max-width: 1280px) {
-    width: 23rem;
-  }
-
-  @media (max-width: 1024px) {
-    width: 75%;
-  }
-
-  @media (max-width: 800px) {
-    width: 100%;
-  }
-`;
-
-export const ParagraphDev = styled.p`
-  margin-top: 3rem;
+export const Paragraph = styled.p`
+  margin-top: 1.5rem;
   font-size: 1.5rem;
   font-weight: 400;
   color: #eaeaea;
@@ -143,73 +91,6 @@ export const ParagraphDev = styled.p`
   }
 `;
 
-//Parte de UI
-
-export const UIContent = styled.div`
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-left: 10rem;
-  padding-right: 2.5rem;
-
-  @media (max-width: 800px) {
-    margin-left: 2.5rem;
-  }
- 
-`;
-export const TitleContentUI = styled.div`
-  display: flex;
-  width: 28rem;
-
-  h1 {
-    position: absolute;
-    z-index: 1;
-    height: 4rem;
-  }
-
-  svg {
-    margin-left: auto;
-    margin-top: -0.8rem;
-    z-index: 2;
-    animation: ${rotateSvg} 5s infinite;
-  }
-
-  @media(max-width: 800px) {
-
-width: 80%;
-
-}
-`;
-
-export const ParagraphUI = styled.p`
-  margin-top: 1.5rem;
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: #464646;
-  line-height: 36px;
-
-  @media (max-width: 1440px) {
-    width: 23rem;
-  }
-
-  @media (max-width: 1280px) {
-    width: 18rem;
-  }
-
-  @media (max-width: 1024px) {
-    width: 100%;
-  }
-
-  @media(max-width: 800px) {
-
-    margin-top: 4rem;
-
-  }
-`;
-//Global
-
 export const Link = styled.a`
   display: flex;
   margin-top: 1rem;
@@ -224,26 +105,15 @@ export const Link = styled.a`
   border-radius: 0.8rem;
   font-weight: 500;
   font-size: 1rem;
-  width: 364px;
+  width: 22.75rem;
   cursor: pointer;
-`;
+  margin-bottom: 5rem;
 
-export const Image = styled.img`
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
+  @media(max-width: 1024px) {
 
-  @media (max-width: 1024px) {
-    display: none;
+    width: 100%;
+    text-align: center;
+
   }
 `;
 

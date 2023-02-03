@@ -31,6 +31,7 @@ const GlobalStyle = createGlobalStyle`
   	line-height: 1;
     color: #2d2d2d;
     font-family: Poppins;
+    overflow-x: hidden;
   }
   ol, ul {
   	list-style: none;
