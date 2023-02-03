@@ -35,7 +35,7 @@ export const Dev = styled.div`
   flex: 2;
   background-color: #2d2d2d;
   color: #fafafa;
-  height: 100vh;
+  height: auto;
 `;
 export const Content = styled.div`
   display: flex;

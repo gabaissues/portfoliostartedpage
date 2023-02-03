@@ -35,7 +35,7 @@ export const UI = styled.div`
   flex: 2;
   background-color: #fafafa;
   color: #2d2d2d;
-  height: 100vh;
+  height: auto;
 `;
 
 export const Content = styled.div`
