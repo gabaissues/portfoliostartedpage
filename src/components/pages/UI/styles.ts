@@ -43,6 +43,8 @@ export const Content = styled.div`
   justify-content: flex-start;
   flex-direction: column;
 
+  background-color: #fafafa;
+
   padding-top: 20rem;
   padding-left: 5rem;
   padding-right: 10rem;
@@ -50,6 +52,9 @@ export const Content = styled.div`
     position: absolute;
     animation: ${rotateSvg} 5s Infinite;
   }
+
+
+background-color: #fafafa;
 
   @media(max-width: 1280px) {
     padding-left: 2.5rem;

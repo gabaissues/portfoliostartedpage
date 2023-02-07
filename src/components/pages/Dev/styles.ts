@@ -36,6 +36,13 @@ export const Dev = styled.div`
   background-color: #2d2d2d;
   color: #fafafa;
   height: auto;
+
+  @media (max-width: 1280px) {
+
+    width: 100%;
+    flex: 2;
+
+  }
 `;
 export const Content = styled.div`
   display: flex;
@@ -55,10 +62,13 @@ export const Content = styled.div`
     animation: ${rotateSvg} 5s Infinite;
   }
 
+  background-color: #2d2d2d;
+
   @media(max-width: 1280px) {
     padding-left: 5rem;
-    padding-right: 2.5rem;
+    padding-right: 9.5rem;
     padding-bottom: 2.5rem;
+
   }
 
   @media(max-width: 800px) {
@@ -104,7 +114,7 @@ export const Link = styled.a`
   margin-bottom: 5rem;
   margin-left: auto;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 800px) {
     width: 90%;
     text-align: center;
     margin-left: 0;
@@ -127,7 +137,7 @@ export const TextFixed = styled.div<{
   font-weight: 600;
   font-size: 1.5rem;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1280px) {
     display: none;
   }
 `;

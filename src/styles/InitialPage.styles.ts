@@ -2,10 +2,19 @@ import styled from "styled-components";
 
 export const Main = styled.main`
   display: flex;
-  height: 100vh;
+  height: auto;
   flex: 1;
+  height: 100vh;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1660px) {
+    height: 100vh;
+  }
+
+  @media (max-width: 1440px) {
+    height: auto;
+  }
+
+  @media (max-width: 1280px) {
     flex-direction: column;
   }
 `;
